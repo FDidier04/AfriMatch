@@ -1,0 +1,33 @@
+# Node
+node_modules/
+dist/
+.npm-cache/
+frontend/.npm-cache/
+
+# PHP / Symfony
+vendor/
+backend/var/
+backend/.env.local
+backend/.env.*.local
+backend/config/jwt/*.pem
+
+# Environment variables
+.env
+frontend/.env
+backend/.env
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+backend/*.log
+backend/*.err
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local data
+backend/src/data/*.json
+

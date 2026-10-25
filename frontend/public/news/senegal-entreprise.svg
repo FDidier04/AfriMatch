@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Entrepreneuriat au Senegal</title>
+  <desc id="desc">Illustration du monument de la Renaissance africaine et d'un porteur de projet.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef1ff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="420" fill="url(#bg)"/>
+  <path d="M0 314c132-52 247-42 361-22 116 20 197 31 299-7 84-31 158-38 240-4v139H0z" fill="#202447"/>
+  <circle cx="710" cy="104" r="76" fill="#ffb31a" opacity=".36"/>
+  <path d="M670 288l44-168 42 168z" fill="#5cbdb8"/>
+  <path d="M716 130l-44 35 20 18 40-28z" fill="#dc116f"/>
+  <path d="M733 128l51 27-15 22-47-22z" fill="#ffb31a"/>
+  <circle cx="714" cy="105" r="20" fill="#202447"/>
+  <circle cx="222" cy="156" r="38" fill="#202447"/>
+  <path d="M136 360c15-96 51-150 86-150s72 54 88 150z" fill="#ffffff"/>
+  <path d="M322 236h136v82H322z" fill="#ffffff"/>
+  <path d="M340 254h98v12h-98zm0 26h76v12h-76z" fill="#202447"/>
+  <path d="M236 226c30 32 62 35 97 7" fill="none" stroke="#ffb31a" stroke-width="14" stroke-linecap="round"/>
+  <text x="48" y="74" fill="#202447" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">SENEGAL</text>
+</svg>

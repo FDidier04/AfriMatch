@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Creation d'entreprise en Cote d'Ivoire</title>
+  <desc id="desc">Illustration de Yamoussoukro, Abidjan et entrepreneurs ivoiriens.</desc>
+  <rect width="900" height="420" fill="#fffaf6"/>
+  <rect y="300" width="900" height="120" fill="#202447"/>
+  <circle cx="705" cy="106" r="80" fill="#ffb31a" opacity=".36"/>
+  <path d="M610 308V170h42v138zm56 0V126h42v182zm56 0V190h42v118z" fill="#d9dded"/>
+  <path d="M586 312c16-116 72-174 124-174s108 58 124 174z" fill="none" stroke="#5cbdb8" stroke-width="12"/>
+  <circle cx="210" cy="164" r="36" fill="#202447"/>
+  <circle cx="312" cy="166" r="36" fill="#dc116f"/>
+  <path d="M132 360c14-94 49-146 78-146 32 0 66 52 80 146z" fill="#ffffff"/>
+  <path d="M248 360c15-96 45-146 64-146 34 0 72 52 88 146z" fill="#5cbdb8"/>
+  <path d="M205 230c38 38 77 38 112 0" fill="none" stroke="#ffb31a" stroke-width="14" stroke-linecap="round"/>
+  <path d="M420 236h104v82H420z" fill="#ffffff"/>
+  <path d="M438 254h68v12h-68zm0 26h52v12h-52z" fill="#202447"/>
+  <text x="48" y="74" fill="#202447" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">COTE D'IVOIRE</text>
+</svg>

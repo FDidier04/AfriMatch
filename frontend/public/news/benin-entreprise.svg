@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">Entrepreneuriat au Benin</title>
+  <desc id="desc">Illustration de deux entrepreneures et du monument de l'Amazone de Cotonou.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef1ff"/>
+      <stop offset="1" stop-color="#fffaf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="420" fill="url(#sky)"/>
+  <circle cx="734" cy="100" r="70" fill="#ffb31a" opacity=".32"/>
+  <path d="M0 332c126-48 218-20 332-44 132-28 229-107 363-80 87 18 138 72 205 70v142H0z" fill="#202447"/>
+  <path d="M680 102l-24 78 38-20-16 100 75-127-43 20 23-51z" fill="#dc116f"/>
+  <path d="M666 262h74l20 74H646z" fill="#ffb31a"/>
+  <circle cx="212" cy="160" r="38" fill="#202447"/>
+  <circle cx="314" cy="156" r="36" fill="#dc116f"/>
+  <path d="M132 356c12-96 48-145 80-145s68 49 82 145z" fill="#5cbdb8"/>
+  <path d="M255 356c13-94 44-143 59-143 36 0 75 53 88 143z" fill="#ffffff"/>
+  <path d="M414 238h130v92H414z" fill="#ffffff"/>
+  <path d="M431 256h96v14h-96zm0 28h72v14h-72z" fill="#202447"/>
+  <path d="M200 226c34 35 75 36 113 0" fill="none" stroke="#ffb31a" stroke-width="14" stroke-linecap="round"/>
+  <text x="48" y="74" fill="#202447" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">BENIN</text>
+</svg>

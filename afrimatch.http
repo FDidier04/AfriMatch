@@ -1,0 +1,125 @@
+### Afrimatch API collection
+### Compatible with VS Code REST Client extension
+
+@baseUrl = http://127.0.0.1:8000/api
+@ownerEmail = owner.http@afrimatch.test
+@ownerPassword = Password123!
+@partnerEmail = partner.http@afrimatch.test
+@partnerPassword = Password123!
+@projectId = 1
+
+###
+# Register project owner
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "email": "{{ownerEmail}}",
+  "password": "{{ownerPassword}}",
+  "firstName": "Awa",
+  "lastName": "Kone",
+  "phone": "+2250700000001",
+  "role": "project_owner",
+  "consentGiven": true
+}
+
+###
+# Register partner
+POST {{baseUrl}}/auth/register
+Content-Type: application/json
+
+{
+  "email": "{{partnerEmail}}",
+  "password": "{{partnerPassword}}",
+  "firstName": "Mamadou",
+  "lastName": "Diop",
+  "phone": "+221770000001",
+  "role": "partner",
+  "consentGiven": true
+}
+
+###
+# Owner login
+# @name ownerLogin
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{ownerEmail}}",
+  "password": "{{ownerPassword}}"
+}
+
+> {% client.global.set("ownerToken", response.body.token); %}
+
+###
+# Partner login
+# @name partnerLogin
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "{{partnerEmail}}",
+  "password": "{{partnerPassword}}"
+}
+
+> {% client.global.set("partnerToken", response.body.token); %}
+
+###
+# Public projects list
+GET {{baseUrl}}/projects?country=CI&sector=agritech&need=investment&stage=traction
+Accept: application/json
+
+###
+# Owner creates project
+POST {{baseUrl}}/projects
+Authorization: Bearer {{ownerToken}}
+Content-Type: application/json
+
+{
+  "title": "AgriPay Cacao",
+  "shortDescription": "Solution de paiement et suivi pour cooperatives cacao.",
+  "description": "Plateforme deja pilotee avec des cooperatives pour faciliter les paiements, le suivi des volumes et la transparence des transactions.",
+  "country": "CI",
+  "city": "Abidjan",
+  "sector": "agritech",
+  "stage": "traction",
+  "businessModel": "B2B",
+  "needs": ["investment", "distribution", "expertise"],
+  "fundingAmountCfa": 50000000,
+  "tractionSummary": "3 cooperatives pilotes, 1200 producteurs references.",
+  "teamSummary": "Equipe de 4 personnes : produit, operations, finance, terrain."
+}
+
+###
+# Partner creates profile
+POST {{baseUrl}}/partners/profile
+Authorization: Bearer {{partnerToken}}
+Content-Type: application/json
+
+{
+  "organizationName": "Impact Capital Afrique",
+  "partnerType": "investor",
+  "description": "Investisseur early-stage interesse par les solutions a impact en Afrique francophone.",
+  "countriesOfInterest": ["CI", "SN", "BJ"],
+  "sectorsOfInterest": ["agritech", "fintech", "education"],
+  "stagesOfInterest": ["traction", "growth"],
+  "needsSupported": ["investment", "expertise"],
+  "ticketMinCfa": 10000000,
+  "ticketMaxCfa": 100000000
+}
+
+###
+# Matching recommendations
+GET {{baseUrl}}/matching/recommendations
+Authorization: Bearer {{partnerToken}}
+Accept: application/json
+
+###
+# Contact project owner
+POST {{baseUrl}}/projects/{{projectId}}/contact
+Authorization: Bearer {{partnerToken}}
+Content-Type: application/json
+
+{
+  "message": "Bonjour, votre projet correspond a nos criteres agritech. Nous souhaitons organiser un premier echange."
+}
